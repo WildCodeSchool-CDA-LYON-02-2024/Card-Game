@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from "typeorm";
 
-export class CreateGameTable1722351155794 implements MigrationInterface {
-    name = 'CreateGameTable1722351155794'
+export class Database1722413849689 implements MigrationInterface {
+    name = 'Database1722413849689'
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`CREATE TABLE \`card\` (\`id\` int NOT NULL AUTO_INCREMENT, \`suit\` varchar(255) NOT NULL, \`rank\` varchar(255) NOT NULL, \`gameId\` int NULL, \`playerId\` int NULL, PRIMARY KEY (\`id\`)) ENGINE=InnoDB`);
